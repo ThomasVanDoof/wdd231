@@ -2,12 +2,11 @@
 #web-certificate-courses {
     background: var(--secondary-color-but-transparent);
     padding: 20px;
-    border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
 :root {
-    --text-color: #72d559;
-    --primary-color: #39032b;
+    --text-color: #ffffff;
+    --primary-color: #000000;
     --secondary-color: #ea8716;
     --secondary-color-but-transparent: rgba(234, 135, 22, 0.5);
 }
@@ -54,7 +53,7 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     color: var(--text-color);
 }
 
@@ -71,9 +70,10 @@ a:hover {
 #main-sections {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 2rem;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 body {
@@ -83,19 +83,37 @@ body {
     padding: 20px;
 }
 #about-me {
-    width: 400px;
+    flex: 1 1 300px;
+    min-width: 200px;
+    max-width: 1000px;
     margin: 0;
-    align-self: flex-start;
 }
 
 #student-photo {
-    width: 220px;
+    flex: 1 1 180px;
+    min-width: 180px;
+    max-width: 400px;
     margin: 0;
     text-align: center;
-    align-self: flex-start;
 }
 
 #web-certificate-courses {
-    width: 80%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+    #main-sections {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    #about-me, #student-photo {
+        max-width: 100%;
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+#web-certificate-courses {
+    width: 100%;
     margin: 20px auto;
 }
