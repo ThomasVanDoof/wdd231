@@ -1,0 +1,101 @@
+#main-sections > section,
+#web-certificate-courses {
+    background: var(--secondary-color-but-transparent);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+:root {
+    --text-color: #72d559;
+    --primary-color: #39032b;
+    --secondary-color: #ea8716;
+    --secondary-color-but-transparent: rgba(234, 135, 22, 0.5);
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: 10px;
+    text-align: left;
+}
+p {
+    color: var(--text-color);
+}
+
+
+body {
+    background-color: var(--background-color);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: left;
+    align-items: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 0.5em 1em;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    text-decoration: bold;
+    color: var(--secondary-color);
+}
+
+h1, h2, h3 {
+    color: var(--text-color);
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: bold;
+    color: var(--secondary-color);
+}
+
+#main-sections {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+#about-me {
+    width: 400px;
+    margin: 0;
+    align-self: flex-start;
+}
+
+#student-photo {
+    width: 220px;
+    margin: 0;
+    text-align: center;
+    align-self: flex-start;
+}
+
+#web-certificate-courses {
+    width: 80%;
+    margin: 20px auto;
+}
