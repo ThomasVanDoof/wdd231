@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <h1>Site Name</h1>
+        <h1>Student Home</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,6 +19,7 @@
                 <li><a href="final.html">Final</a></li>
             </ul>
         </nav>
+        <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
     </header>
     <main>
         <h1>Home</h1>
@@ -34,30 +35,22 @@
         </div>
         <section id="web-certificate-courses">
             <h2>Web Certificate Courses</h2>
-            <section>
-                <h4>All</h4>
-                <p></p>
-            </section>
-            <section>
-                <h4>CSE</h4>
-                <p></p>
-            </section>
-            <section>
-                <h4>WDD</h4>
-                <p></p>
-                <section>
-                    <h5>WDD 130</h5>
-                </section>
-                <section>
-                    <h5>WDD 131</h5>
-                </section>
-                <section>
-                    <h5>WDD 231</h5>
-                </section>
-            </section>
-            <a href="https://x.com/" target="_blank" rel="noopener">X</a>
-        </section>
-        
+
+            <label for="filter">Filter by Subject: </label>
+            <select id="filter">
+                <option value="ALL">All</option>
+                <option value="CSE">CSE</option>
+                <option value="WDD">WDD</option>
+            </select>
+
+            <div id="course-list"></div>
+
+
+            <div id="course-summary">
+                <p>Total Credits: <span id="total-credits">0</span></p>
+                <p>Classes Taken: <span id="classes-taken">0</span></p>
+            </div>
+        </section>     
     </main>
     <footer>
         <p>&copy; Thomas Todd Barney - USA Utah <span id="year"></span></p>
