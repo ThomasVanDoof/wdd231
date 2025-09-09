@@ -43,7 +43,7 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: bold;
+    text-decoration: underline;
     color: var(--secondary-color);
 }
 
@@ -57,7 +57,7 @@ a {
 }
 
 a:hover {
-    text-decoration: bold;
+    text-decoration: underline;
     color: var(--secondary-color);
 }
 
