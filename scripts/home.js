@@ -24,7 +24,7 @@ const courses = [
   { code: "CSE 111", name: "Programming with Functions", credits: 3, taken: true, subject: "CSE" },
   { code: "WDD 130", name: "Web Fundamentals", credits: 2, taken: true, subject: "WDD" },
   { code: "WDD 131", name: "Web Design & Development", credits: 2, taken: true, subject: "WDD" },
-  { code: "WDD 231", name: "Frontend Development", credits: 3, taken: true, subject: "WDD" }
+  { code: "WDD 231", name: "Frontend Development", credits: 3, taken: false, subject: "WDD" }
 ];
 
 const filter = document.getElementById("filter");
