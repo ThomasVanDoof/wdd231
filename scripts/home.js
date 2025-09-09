@@ -21,10 +21,11 @@ document.querySelectorAll("nav a").forEach(link => {
 
 const courses = [
   { code: "CSE 110", name: "Intro to Programming", credits: 2, taken: true, subject: "CSE" },
-  { code: "CSE 111", name: "Programming with Functions", credits: 3, taken: true, subject: "CSE" },
+  { code: "CSE 111", name: "Programming with Functions", credits: 2, taken: true, subject: "CSE" },
+  { code: "CSEPC 110", name: "Introduction to Programming", credits: 2, taken: true, subject: "CSEPC" },
   { code: "WDD 130", name: "Web Fundamentals", credits: 2, taken: true, subject: "WDD" },
   { code: "WDD 131", name: "Web Design & Development", credits: 2, taken: true, subject: "WDD" },
-  { code: "WDD 231", name: "Frontend Development", credits: 3, taken: false, subject: "WDD" }
+  { code: "WDD 231", name: "Frontend Development", credits: 2, taken: false, subject: "WDD" }
 ];
 
 const filter = document.getElementById("filter");
