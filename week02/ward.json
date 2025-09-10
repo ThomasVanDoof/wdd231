@@ -1,0 +1,32 @@
+{
+  "ward_members": [
+    {
+      "family_name": "Johnson",
+      "move_in_date": "2023-05-15",
+      "number_of_family_members": 4,
+      "visited_by_bishopric": true,
+      "members": [
+        {
+          "name": "Cave Johnson",
+          "gender": "Male",
+          "birthdate": "1985-02-14"
+        },
+        {
+          "name": "Sarah Johnson",
+          "gender": "Female",
+          "birthdate": "1984-09-23"
+        },
+        {
+          "name": "Chell Johnson",
+          "gender": "Female",
+          "birthdate": "2012-07-08"
+        },
+        {
+          "name": "Jacob Johnson",
+          "gender": "Male",
+          "birthdate": "2015-11-30"
+        }
+      ]
+    }
+  ]
+}
