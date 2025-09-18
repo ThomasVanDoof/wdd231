@@ -6,7 +6,8 @@ let members = [];
 
 async function fetchMembers() {
   try {
-    const response = await fetch("/data/members.json");
+    // Use relative path since script is in chamber/scripts and data is in chamber/data
+    const response = await fetch("../data/members.json");
     members = await response.json();
     renderMembers("grid");
   } catch (err) {
@@ -43,6 +44,7 @@ function membershipLevel(level) {
 }
 
 window.setView = function(view) {
+  console.log('Switching to view:', view);
   renderMembers(view);
 };
 
