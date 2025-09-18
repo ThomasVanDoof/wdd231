@@ -1,0 +1,65 @@
+[
+  {
+    "name": "ABZ Consulting",
+    "address": "123 Main St, Your City, ST 12345",
+    "phone": "(555) 123-4567",
+    "website": "https://abzconsulting.com",
+    "image": "abz-consulting.png",
+    "membership": 3,
+    "description": "Business and management consulting services."
+  },
+  {
+    "name": "Event Horizon Café",
+    "address": "456 Sunrise Ave, Your City, ST 12345",
+    "phone": "(555) 234-5678",
+    "website": "https://eventhorizoncafe.com",
+    "image": "event-horizon-cafe.png",
+    "membership": 2,
+    "description": "Family-owned breakfast and lunch restaurant."
+  },
+  {
+    "name": "GreedyTech Solutions",
+    "address": "789 Tech Park, Your City, ST 12345",
+    "phone": "(555) 345-6789",
+    "website": "https://greedytech.com",
+    "image": "greedytech.png",
+    "membership": 1,
+    "description": "IT and technology solutions for small businesses."
+  },
+  {
+    "name": "Old Thumb Nursery",
+    "address": "321 Garden Rd, Your City, ST 12345",
+    "phone": "(555) 456-7890",
+    "website": "https://oldthumb.com",
+    "image": "old-thumb.png",
+    "membership": 2,
+    "description": "Plants, gardening supplies, and landscaping services."
+  },
+  {
+    "name": "The Fittest Gym",
+    "address": "654 Fitness Blvd, Your City, ST 12345",
+    "phone": "(555) 567-8901",
+    "website": "https://fittestgym.com",
+    "image": "fittest-gym.png",
+    "membership": 1,
+    "description": "24/7 gym and personal training."
+  },
+  {
+    "name": "Book Rook",
+    "address": "987 Book Ln, Your City, ST 12345",
+    "phone": "(555) 678-9012",
+    "website": "https://bookrook.com",
+    "image": "book-rook.png",
+    "membership": 3,
+    "description": "Independent bookstore and reading lounge."
+  },
+  {
+    "name": "City Leaners",
+    "address": "159 Clean St, Your City, ST 12345",
+    "phone": "(555) 789-0123",
+    "website": "https://cityleaners.com",
+    "image": "city-leaners.png",
+    "membership": 2,
+    "description": "Dry cleaning and laundry services."
+  }
+]
