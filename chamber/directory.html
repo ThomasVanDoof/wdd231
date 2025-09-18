@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Directory</title>
+  <meta name="description" content="Explore the official business directory of the Your City Chamber of Commerce. Find trusted local businesses, services, and organizations.">
+  <meta name="author" content="Your Chamber of Commerce">
+  <link rel="stylesheet" href="styles/directory.css">
+  <script src="script/directory.js" defer></script>
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="images/favicon.ico">
+
+  <meta property="og:title" content="Business Directory">
+  <meta property="og:description" content="Discover trusted local businesses through the official Your City Chamber of Commerce directory.">
+  <meta property="og:image" content="https://yourchamber.org/images/og-image.png">
+  <meta property="og:url" content="https://yourchamber.org/directory.html">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <header>
+    <h1>City Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Business Directory</h2>
+
+    <div class="view-toggle">
+      <button onclick="setView('grid')">Grid View</button>
+      <button onclick="setView('list')">List View</button>
+    </div>
+
+    <section id="directory" class="directory grid">
+      <div class="card">
+        <h3>ABC Consulting</h3>
+        <p>Business Services</p>
+        <p><a href="#">Website</a></p>
+      </div>
+      <div class="card">
+        <h3>Sunrise Cafe</h3>
+        <p>Restaurant & Catering</p>
+        <p><a href="#">Website</a></p>
+      </div>
+      <div class="card">
+        <h3>GreedyTech Solutions</h3>
+        <p>Technology & IT</p>
+        <p><a href="#">Website</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact us: fakeo@chamber.org | (555) 123-4567</p>
+    <p>&copy; <span id="year"></span> City Chamber of Commerce</p>
+    <p>Developed by Thomas Todd Barney | WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
