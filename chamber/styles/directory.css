@@ -93,5 +93,5 @@ body {
 
     a {
       color: var(--text-color);
-      font: 'Mozilla Text', sans-serif;
+      font-family: 'Mozilla Text', sans-serif;
     }
