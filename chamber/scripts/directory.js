@@ -6,8 +6,7 @@ let members = [];
 
 async function fetchMembers() {
   try {
-    const response = await fetch("data/members.json");
-    if (!response.ok) throw new Error("Failed to fetch members");
+    const response = await fetch("/data/members.json");
     members = await response.json();
     renderMembers("grid");
   } catch (err) {
