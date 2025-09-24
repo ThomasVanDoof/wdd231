@@ -55,6 +55,67 @@ body {
       margin: auto;
     }
 
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.hero-cta {
+  margin-top: 0.75rem;
+  text-align: center;
+}
+.cta {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#info-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+#events {
+  flex: 1 1 420px;
+  min-width: 260px;
+}
+#weather {
+  flex: 0 1 240px;
+  min-width: 200px;
+}
+#weather-widget {
+  background: #fff;
+  padding: 0.75rem;
+  border-radius: 6px;
+}
+
+.spotlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.spotlight {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+}
+.spotlight img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#spotlights {
+  margin-top: 1.5rem;
+}
+
     .view-toggle {
       margin-bottom: 1rem;
       text-align: right;

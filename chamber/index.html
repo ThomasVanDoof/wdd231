@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <meta name="description" content="organizations.">
+  <meta name="author" content="Thomas Todd Barney">
+  <link rel="stylesheet" href="styles/directory.css">
+  <script src="scripts/directory.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&family=Mozilla+Text:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="images/favicon.ico">
+  <meta property="og:title" content="Home">
+  <meta property="og:description" content="Discover trusted local businesses through the official Your City Chamber of Commerce directory.">
+  <meta property="og:image" content="https://yourchamber.org/images/og-image.png">
+  <meta property="og:url" content="https://yourchamber.org/directory.html">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <header>
+    <h1>Business Directory</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+        <img src="images/hero.png" alt="Downtown skyline">
+        <div class="hero-cta">
+          <a href="join.html" class="cta">Join the Chamber</a>
+        </div>
+    </section>
+
+  <section id="info-row">
+      <div id="events">
+        <h2>Upcoming Events</h2>
+        <ul>
+          <li>
+            <strong>Work Halloween Party</strong> — Oct 28, 2025<br>
+            <small>Community Center | 5:30-7:30pm</small>
+          </li>
+          <li>
+            <strong>Small Biz Workshop</strong> — Sep 30, 2025<br>
+            <small>Marketing Basics for Local Businesses</small>
+          </li>
+          <li>
+            <strong>Annual Gala</strong> — Nov 1, 2025<br>
+            <small>Tickets available soon</small>
+          </li>
+        </ul>
+        <p><a href="discover.html">See all events</a></p>
+      </div>
+
+  <aside id="weather">
+        <h2>Local Weather</h2>
+        <!-- possibly might make this automatic-->
+          <div id="weather-widget">
+          <p><strong>Sunny</strong></p>
+          <p>72°F | 22°C</p>
+          <p>Low 60°F | High 78°F</p>
+        </div>
+      </aside>
+    </section>
+
+  <section id="spotlights">
+      <h2>Member Spotlights</h2>
+      <div class="spotlight-grid">
+        <article class="spotlight">
+          <img src="images/ABZ.png" alt="ABZ Consulting logo">
+          <h3>ABZZZZ Consulting</h3>
+          <p>Expert business consulting and strategic planning. Special member benefits for startups.</p>
+          <p><a href="directory.html">Learn more</a></p>
+        </article>
+
+        <article class="spotlight">
+          <img src="images/EHC.png" alt="Event Horizon Cafe logo">
+          <h3>Event Horizon Café</h3>
+          <p>Community-focused café offering catering for chamber events.</p>
+          <p><a href="directory.html">Learn more</a></p>
+        </article>
+
+        <article class="spotlight">
+          <img src="images/rook.png" alt="Book Rook logo">
+          <h3>Book Rook</h3>
+          <p>Independent bookstore and reading lounge supporting local authors.</p>
+          <p><a href="directory.html">Learn more</a></p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Contact us: fakeo@chamber.org | (555) 123-4567</p>
+    <p>&copy; <span id="year"></span> City Chamber of Commerce</p>
+    <p>Developed by Thomas Todd Barney | WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
