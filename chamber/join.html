@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <meta name="description" content="organizations.">
+  <meta name="author" content="Thomas Todd Barney">
+  <link rel="stylesheet" href="styles/join.css">
+  <script src="scripts/join.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&family=Mozilla+Text:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="images/favicon.ico">
+  <meta property="og:title" content="Home">
+  <meta property="og:description" content="Discover trusted local businesses through the official Your City Chamber of Commerce directory.">
+  <meta property="og:image" content="https://yourchamber.org/images/og-image.png">
+  <meta property="og:url" content="https://yourchamber.org/join.html">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <header>
+    <h1>Business Directory</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+    </ul>
+</nav>
+</header>
+  <main class="wrap" id="page">
+    <section class="form-column" aria-labelledby="form-heading">
+      <h1 id="form-heading">Membership Sign-up</h1>
+      <p class="muted">Please fill out required fields. All inputs are accessible and wrapped with labels for screen readers.</p>
+
+      <form id="signupForm" method="get" action="thankyou.html" novalidate>
+        <div class="row">
+          <div class="field">
+            <label for="firstName">First name <span aria-hidden="true">*</span>
+              <input id="firstName" type="text" name="firstName" required autocomplete="given-name" />
+            </label>
+          </div>
+          <div class="field">
+            <label for="lastName">Last name <span aria-hidden="true">*</span>
+              <input id="lastName" type="text" name="lastName" required autocomplete="family-name" />
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="orgTitle">Organizational title
+            <input id="orgTitle" type="text" name="organizationTitle"
+                   autocomplete="organization-title"
+                   pattern="^[A-Za-z\s-]{7,}$"
+                   title="Enter at least 7 characters. Letters, hyphens and spaces only." />
+          </label>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="email">Email <span aria-hidden="true">*</span>
+              <input id="email" type="email" name="email" required autocomplete="email" placeholder="e.g. name@example.com" />
+            </label>
+          </div>
+          <div class="field">
+            <label for="phone">Mobile phone <span aria-hidden="true">*</span>
+              <input id="phone" type="tel" name="mobile" required autocomplete="tel" />
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="business">Business / Organization name <span aria-hidden="true">*</span>
+            <input id="business" type="text" name="businessName" required autocomplete="organization" />
+          </label>
+        </div>
+
+        <div class="field" role="radiogroup" aria-labelledby="membershipLabel">
+          <label id="membershipLabel">Membership level</label>
+          <div class="radio-wrap">
+            <label><input type="radio" name="membership" value="NP" checked /> NP Membership</label>
+            <label><input type="radio" name="membership" value="Bronze" /> Bronze</label>
+            <label><input type="radio" name="membership" value="Silver" /> Silver</label>
+            <label><input type="radio" name="membership" value="Gold" /> Gold</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="description">Organization description
+            <textarea id="description" name="orgDescription"></textarea>
+          </label>
+        </div>
+
+        <input type="hidden" id="timestamp" name="timestamp" />
+
+        <div class="submit-wrap">
+          <input type="submit" value="Submit membership application" />
+        </div>
+      </form>
+    </section>
+
+    <aside class="cards-column">
+      <div class="membership-card" data-level="NP">
+        <h4>NP Membership</h4>
+        <p>For non-profits — no fee.</p>
+        <a href="#" data-open-modal="NP">Details</a>
+      </div>
+      <div class="membership-card" data-level="Bronze">
+        <h4>Bronze</h4>
+        <p>Entry level benefits.</p>
+        <a href="#" data-open-modal="Bronze">Details</a>
+      </div>
+      <div class="membership-card" data-level="Silver">
+        <h4>Silver</h4>
+        <p>Training + discounts.</p>
+        <a href="#" data-open-modal="Silver">Details</a>
+      </div>
+      <div class="membership-card" data-level="Gold">
+        <h4>Gold</h4>
+        <p>Advertising + VIP events.</p>
+        <a href="#" data-open-modal="Gold">Details</a>
+      </div>
+    </aside>
+  </main>
+
+  <div id="modal-NP" class="modal-backdrop" aria-hidden="true">
+    <div class="modal">
+      <h3>NP Membership</h3>
+      <p>No cost, directory listing, community access.</p>
+      <button class="close" data-close>Close</button>
+    </div>
+  </div>
+
+  <div id="modal-Bronze" class="modal-backdrop" aria-hidden="true">
+    <div class="modal">
+      <h3>Bronze Membership</h3>
+      <p>Newsletter, resources, event access.</p>
+      <button class="close" data-close>Close</button>
+    </div>
+  </div>
+
+  <div id="modal-Silver" class="modal-backdrop" aria-hidden="true">
+    <div class="modal">
+      <h3>Silver Membership</h3>
+      <p>Training, event discounts, highlights.</p>
+      <button class="close" data-close>Close</button>
+    </div>
+  </div>
+
+  <div id="modal-Gold" class="modal-backdrop" aria-hidden="true">
+    <div class="modal">
+      <h3>Gold Membership</h3>
+      <p>Spotlight ads, VIP events, premium training.</p>
+      <button class="close" data-close>Close</button>
+    </div>
+  </div>
+  <footer>
+    <p>Contact us: fakeo@chamber.org | (555) 123-4567</p>
+    <p>&copy; <span id="year"></span> City Chamber of Commerce</p>
+    <p>Developed by Thomas Todd Barney | WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+</body>
+</html>
