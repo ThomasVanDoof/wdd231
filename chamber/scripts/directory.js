@@ -6,7 +6,6 @@ let members = [];
 
 async function fetchMembers() {
   try {
-    // Use relative path since script is in chamber/scripts and data is in chamber/data
     const response = await fetch("../data/members.json");
     members = await response.json();
     renderMembers("grid");
