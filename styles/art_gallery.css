@@ -22,7 +22,7 @@ html, body {
     padding: 24px;
 }
 
-body::before {
+body:before {
     content: "";
     position: fixed;
     inset: 0;

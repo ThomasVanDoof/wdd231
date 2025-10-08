@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover</title>
+  <meta name="description" content="Discover local points of interest">
+  <meta name="author" content="Thomas Todd Barney">
+  <link rel="stylesheet" href="styles/discover.css">
+  <script src="scripts/discover.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&family=Mozilla+Text:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="images/favicon.ico">
+  <meta property="og:title" content="Business Directory">
+  <meta property="og:description" content="Discover trusted local businesses through the official Your City Chamber of Commerce directory.">
+  <meta property="og:image" content="https://yourchamber.org/images/og-image.png">
+  <meta property="og:url" content="https://yourchamber.org/discover.html">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Chamber Logo"></a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search places...">
+        <button id="searchButton">Search</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="discover-page">
+    <section class="intro card">
+      <h1>Discover Our City</h1>
+      <p>Explore eight curated places of interest around town. Use the search to filter or tap "Learn more" for details.</p>
+    </section>
+
+    <section id="cards" class="cards-grid" aria-live="polite">
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact us: fakeo@chamber.org | (555) 123-4567</p>
+    <p>&copy; <span id="year"></span> City Chamber of Commerce</p>
+    <p>Developed by Thomas Todd Barney | WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

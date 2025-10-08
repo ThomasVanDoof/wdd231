@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Park",
+    "address": "123 Main St",
+    "description": "an enclosed park with a children's playground, and picnic area.",
+    "image": "park.webp"
+  },
+  {
+    "title": "Library/Museum",
+    "address": "321 Main St",
+    "description": "a library and museum with local history exhibits.",
+    "image": "library.webp"
+  },
+  {
+    "title": "Main Street",
+    "address": "Main St",
+    "description": "Simply main street. a lot of cool old buildings and shops.",
+    "image": "main.webp"
+  },
+  {
+    "title": "USU Campus",
+    "address": "Aggie Blvd",
+    "description": "A college campus.",
+    "image": "campus.webp"
+  },
+  {
+    "title": "Glassworks Studio",
+    "address": "45 Artisan Row",
+    "description": "Working glassblowing studio with demos and workshops.",
+    "image": "glass.webp"
+  },
+  {
+    "title": "Civic Theater",
+    "address": "10 Main St",
+    "description": "Historic theater featuring live performances and films.",
+    "image": "theater.webp"
+  },
+  {
+    "title": "Botanical Conservatory",
+    "address": "300 Greenway",
+    "description": "Climate-controlled conservatory showcasing exotic plants.",
+    "image": "conservatory.webp"
+  },
+  {
+    "title": "Skyline Café",
+    "address": "55 Highview Ave",
+    "description": "Rooftop café with panoramic city views.",
+    "image": "cafe.webp"
+  }
+]
