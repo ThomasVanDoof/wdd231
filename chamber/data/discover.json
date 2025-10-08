@@ -24,27 +24,27 @@
     "image": "campus.webp"
   },
   {
-    "title": "Glassworks Studio",
-    "address": "45 Artisan Row",
-    "description": "Working glassblowing studio with demos and workshops.",
-    "image": "glass.webp"
+    "title": "Blacksmith Fork Park",
+    "address": "blacksmith Fork park",
+    "description": "A big park that has a ton of different stuff to do.",
+    "image": "blacksmithfork.webp"
   },
   {
-    "title": "Civic Theater",
-    "address": "10 Main St",
-    "description": "Historic theater featuring live performances and films.",
-    "image": "theater.webp"
+    "title": "Logan Temple",
+    "address": "100 north 300 east",
+    "description": "a lds temple that is a large beautiful building.",
+    "image": "temple.webp"
   },
   {
-    "title": "Botanical Conservatory",
-    "address": "300 Greenway",
-    "description": "Climate-controlled conservatory showcasing exotic plants.",
-    "image": "conservatory.webp"
+    "title": "Logan Tabernacle",
+    "address": "main st",
+    "description": "a tabernacle that has cool architecture and acoustics.",
+    "image": "tabernacle.webp"
   },
   {
-    "title": "Skyline Café",
-    "address": "55 Highview Ave",
-    "description": "Rooftop café with panoramic city views.",
-    "image": "cafe.webp"
+    "title": "Historic Buildings",
+    "address": "center st",
+    "description": "Historic buildings with cool architecture.",
+    "image": "old.webp"
   }
 ]
