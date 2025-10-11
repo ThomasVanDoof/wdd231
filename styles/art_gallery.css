@@ -1,32 +1,102 @@
 :root {
-    --primary-color: #e9dc33;
-    --secondary-color: #0a2604;
-    --third-color: #a649a6;
-    --background-color: #321038;
-    --text-color: #738b52;
+    --primary-color: #2ccc23;
+    --secondary-color: #041218;
+    --background-color: #dcdbad;
+    --text-color: #39ae19;
 }
 body {
     font-family: tektur, sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
-    margin: 20px;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
 }
 
 html, body {
     height: 100%;
 }
-.container {
+
+h1, h2 {
+    font-family: 'Jacquard 12', tektur, sans-serif;
+    text-align: center;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 24px;
+    padding: 24px 12px;
+    box-sizing: border-box;
+}
+
+.art-piece {
+    flex: 1 1 420px;
+    max-width: 480px;
+    min-width: 260px;
+    background: linear-gradient(180deg, rgba(5, 66, 3, 0.782), rgb(116, 49, 89));
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 16px;
+    padding: 18px 18px 14px 18px;
+    margin: 0;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 220ms ease, transform 220ms ease;
+    position: relative;
+    z-index: 1;
+}
+
+.art-piece img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.18);
+    margin-bottom: 12px;
+    background: #222;
+    object-fit: cover;
+    transition: box-shadow 220ms ease, transform 220ms ease;
+    display: block;
+}
+
+@media (min-width: 641px) {
+    .gallery {
+        flex-direction: row;
+    }
+    .art-piece {
+        flex-basis: 48%;
+        max-width: 480px;
+    }
+    .art-piece img:hover {
+        box-shadow: 0 14px 40px rgba(28, 95, 1, 0.45);
+        transform: translateY(-6px) scale(1.03);
+    }
+}
+
+@media (max-width: 640px) {
+    .gallery {
+        flex-direction: column;
+        gap: 22px;
+        padding: 12px 4px;
+    }
+    .art-piece {
+        max-width: 98vw;
+        padding: 12px 6px 10px 6px;
+    }
+    .art-piece img {
+        max-width: 98vw;
+    }
 }
 
 body:before {
     content: "";
     position: fixed;
     inset: 0;
-    background: radial-gradient(ellipse at 10% 10%, rgba(230,220,51,0.06), transparent 15%), radial-gradient(ellipse at 90% 80%, rgba(166,73,166,0.05), transparent 18%);
+    background: radial-gradient(ellipse at 10% 10%, rgba(0,229,255,0.06), transparent 15%), radial-gradient(ellipse at 90% 80%, rgba(166,100,255,0.05), transparent 18%);
     pointer-events: none;
     z-index: 0;
 }
@@ -43,12 +113,61 @@ header h1 {
     line-height: 1;
     margin: 0 0 8px 0;
     color: var(--primary-color);
-    text-shadow: 0 6px 18px rgba(0,0,0,0.6);
+    text-shadow: 0 6px 18px rgb(0, 0, 0);
 }
 header p {
     max-width: 800px;
     margin: 0 auto;
-    color: #d7d0a0;
+    color: rgba(230,251,255,0.9);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    padding: 10px 18px;
+    margin: 0;
+    border: 1px solid rgba(230,235,240,0.08);
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.04));
+    border-radius: 12px;
+    align-items: center;
+    box-shadow: 0 6px 22px rgb(2, 8, 12);
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 8px;
+    transition: background 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background: rgba(38, 255, 0, 0.15);
+    color: #871ba0;
+    transform: translateY(-2px);
+    outline: none;
+}
+
+@media (max-width: 640px) {
+    nav ul {
+        gap: 10px;
+        padding: 8px 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav a {
+        padding: 6px 8px;
+        font-size: 0.95rem;
+    }
 }
 
 .card {
@@ -78,4 +197,10 @@ footer {
 
 @media (max-width: 720px) {
     header h1 { font-size: 2.2rem; }
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 12px 0;
+    font-family: 'Roboto Condensed', sans-serif;
 }
